@@ -1,0 +1,29 @@
+{
+  "name": "llms-txt-governance-hub",
+  "version": "1.0.0",
+  "description": "TypeScript governance control plane for managing llms.txt manifests, exclusions, freshness windows, and answer-surface release posture.",
+  "main": "dist/src/app.js",
+  "scripts": {
+    "dev": "tsx watch src/app.ts",
+    "build": "tsc --pretty false",
+    "test": "vitest run",
+    "demo": "tsx scripts/run_demo.ts",
+    "smoke": "tsx scripts/smoke_check.ts",
+    "verify": "npm run build && npm run test && npm run demo && npm run smoke",
+    "render:assets": "powershell -ExecutionPolicy Bypass -File .\\scripts\\render_readme_assets.ps1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.8.0",
+    "tsx": "^4.22.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.6"
+  }
+}

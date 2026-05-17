@@ -1,0 +1,4 @@
+node_modules/
+dist/
+screenshots/app.stdout.log
+screenshots/app.stderr.log
