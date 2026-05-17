@@ -34,7 +34,7 @@ It focuses on the release problem most teams ignore:
 ## Local development
 
 ```powershell
-Set-Location "C:\Users\chaus\dev\repos\llms-txt-governance-hub"
+cd llms-txt-governance-hub
 npm install
 npm run dev
 ```
